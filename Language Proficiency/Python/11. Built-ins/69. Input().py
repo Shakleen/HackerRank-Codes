@@ -1,0 +1,5 @@
+x, k = map(int, input().split())
+p = input()
+p = p.replace('x', '{0}')
+p_of_x = eval(p.format(x))
+print(p_of_x == k)
