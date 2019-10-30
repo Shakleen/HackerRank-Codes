@@ -1,0 +1,5 @@
+s = input()
+n = int(input())
+total_a = s.count('a') * (n // len(s))
+if n % len(s): total_a += s.count('a', 0, n % len(s))
+print(total_a)
